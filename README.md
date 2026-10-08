@@ -85,3 +85,40 @@ Credit Card Transaction Dataset
       Streamlit Application
             ↓
      Fraud / Normal Result
+---
+
+## 🧠 Model Used
+
+### Logistic Regression
+
+Logistic Regression is used as the classification algorithm to predict whether a transaction is normal or fraudulent.
+
+The model is trained using the transaction features after applying feature scaling.
+
+### Feature Scaling
+
+`StandardScaler` is used to standardize the input features before training and prediction.
+
+---
+
+## 📊 Model Evaluation
+
+The model is evaluated using:
+
+- Confusion Matrix
+- Classification Report
+- Precision
+- Recall
+- F1-Score
+
+These metrics are useful for fraud detection because fraudulent transactions are usually much fewer than normal transactions.
+
+---
+
+## 💾 Model Saving
+
+After training, the trained model and scaler are saved using Joblib.
+
+```text
+fraud_model.pkl
+scaler.pkl
